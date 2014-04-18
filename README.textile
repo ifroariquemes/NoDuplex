@@ -11,6 +11,7 @@ h2. ! IN WORKING PROJECT !
 - Schedule
 
 h3. Thanks to the starters
+
 Many thanks to who started the project:
 - Aldair Natan Bezerra do Nascimento
 - Filip Mendes Caetano
