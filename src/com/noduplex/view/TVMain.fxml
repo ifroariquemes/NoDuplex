@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.noduplex.controller.TCMain">
+  <children>
+    <Label fx:id="label" layoutX="126.0" layoutY="120.0" minHeight="16.0" minWidth="69.0" />
+    <HBox id="HBox" alignment="CENTER" layoutY="4.0" prefWidth="535.0" spacing="5.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <children>
+        <ImageView disable="false" fitHeight="150.0" fitWidth="200.0" focusTraversable="false" pickOnBounds="true" preserveRatio="true" rotate="0.0" smooth="true" style="" visible="true">
+          <image>
+            <Image url="@../../../Assets/Images/logo.png" />
+          </image>
+        </ImageView>
+      </children>
+    </HBox>
+    <TabPane prefHeight="231.0" prefWidth="535.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="75.0">
+      <tabs>
+        <Tab text="Principal">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="535.0">
+              <children>
+                <TextField fx:id="tfPath" editable="false" layoutY="24.0" prefWidth="464.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="57.0" />
+                <Button fx:id="btPath" layoutY="25.0" mnemonicParsing="false" onAction="#btPathAction" text="..." AnchorPane.rightAnchor="14.0" />
+                <StackPane id="StackPane" layoutY="59.0" prefHeight="65.0" prefWidth="535.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <children>
+                    <Button fx:id="btStart" cancelButton="false" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#btStartAction" prefHeight="58.0" text="Começar!" textOverrun="ELLIPSIS">
+                      <font>
+                        <Font size="30.0" />
+                      </font>
+                    </Button>
+                  </children>
+                </StackPane>
+                <StackPane id="StackPane" layoutY="132.0" prefHeight="37.0" prefWidth="535.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <children>
+                    <Label fx:id="lbMessage" text="Aguarde, carregando tamanho dos arquivos..." visible="true" StackPane.alignment="TOP_CENTER" />
+                    <ProgressBar fx:id="pbProgress" prefHeight="16.0" prefWidth="200.0" progress="0.0" StackPane.alignment="BOTTOM_CENTER" />
+                  </children>
+                </StackPane>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Arquivos duplicados">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TableView fx:id="duplicatedFiles" prefHeight="167.0" prefWidth="507.0" tableMenuButtonVisible="false" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0">                  
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <Button fx:id="btAbout" mnemonicParsing="false" text="Sobre..." AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+  </children>
+</AnchorPane>
