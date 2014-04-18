@@ -9,3 +9,12 @@ h2. ! IN WORKING PROJECT !
 - Search in entire network for duplicated files
 - Terminal mode (e.g. linux server)
 - Schedule
+
+h3. Thanks to the starters
+Many thanks to who started the project:
+- Aldair Natan Bezerra do Nascimento
+- Filip Mendes Caetano
+- Judicael Ribeiro
+- Juliana Braz Costa
+- Randresson Luiz Alexandria dos Santos
+- Vagner Schoaba
