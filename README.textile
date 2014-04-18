@@ -2,7 +2,7 @@ h1. NoDuplex 0.8b
 
 NoDuplex is a Java program to find duplicated files on whole disk or just inside a single folder
 
-h2. -- IN WORKING PROJECT! --
+h2. ! IN WORKING PROJECT !
 
 <b>Coming soon:</b>
 - Multi-language support
